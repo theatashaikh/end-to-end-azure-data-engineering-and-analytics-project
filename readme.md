@@ -752,14 +752,12 @@ By following these steps, you can seamlessly connect BI tools to your Synapse Wo
 
 ### **Step 2: Delete Critical Resources**
 Delete these first (they often incur costs):
-```bash
-# Order of deletion (high to low cost risk)
+*Order of deletion (high to low cost risk)*
 1. Azure Databricks Workspace
 2. Azure Synapse Analytics
 3. Azure Data Factory
 4. Storage Accounts (Data Lake)
 5. App Registrations (AAD)
-
 ---
 
 ### **Step 3: Delete the Resource Group**
@@ -772,3 +770,12 @@ Deleting the Resource Group removes all nested resources in one step.
 3. Click **Delete** and confirm.
 
 **Summary**: Delete your resources if you’re done with the project to prevent post-trial charges. Always verify in **Cost Analysis** afterward. 🚀
+
+## About me
+I am **Ata S. Shaikh** an experienced Data scientist and Data engineer. I have a Master's degree in Artificial Intelligence from the prestigious university The University of Mumbai. 
+
+I have strong background in Data Engineering, Data Science and Machine learning. I solid understanding of Python and all it's libraries for data engineering and machine learning. I am proficient in Advanced SQl queries, have ample knowledge of business intelligence tools like Tableau PowerBI and Excel. 
+
+Additionaly I am an excellent communicator capable of communicating complex information in digestable format to technical as well as non-technical stakeholders.
+
+If you need any guidance feel free to connect with me LinkedIn: https://www.linkedin.com/in/theatashaikh

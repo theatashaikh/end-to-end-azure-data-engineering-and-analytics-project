@@ -718,3 +718,57 @@ Tableau connects to Synapse via the Microsoft SQL Server connector.
 - Optimize Synapse queries for performance when working with large datasets.
 
 By following these steps, you can seamlessly connect BI tools to your Synapse Workspace and visualize your data effectively.
+
+# Azure Free Trial: Post-Project Cleanup Guide
+
+## **1. Will You Be Charged After the Trial?**
+- **Free Trial Period**: 12 months (limited services) + $200 credit for 30 days.
+- **After Trial/Credit Exhaustion**:
+  - **Pay-as-you-go rates apply automatically** if you don't cancel/delete resources.
+  - Some always-free services (e.g., Azure Functions with limits) remain free.
+
+> ⚠️ **Important**: Azure does **not** auto-delete resources when the trial ends. You must manually clean up to avoid charges.
+
+---
+
+## **2. Should You Delete Your Project Resources?**
+**Yes, if**:
+- You’ve completed the project and won’t use the resources further.
+- You want to avoid unexpected costs after the trial.
+
+**No, if**:
+- You’re within the free tier limits and actively using the services.
+- You’ve upgraded to a paid plan intentionally.
+
+---
+
+## **3. How to Delete Resources Safely**
+### **Step 1: List All Resources**
+1. Go to [Azure Portal](https://portal.azure.com).
+2. Navigate to **All Resources**.
+3. Filter by:
+   - **Resource Group**: `Tokyo-Olympic` (or your project’s RG).
+   - **Subscription**: "Free Trial".
+
+### **Step 2: Delete Critical Resources**
+Delete these first (they often incur costs):
+```bash
+# Order of deletion (high to low cost risk)
+1. Azure Databricks Workspace
+2. Azure Synapse Analytics
+3. Azure Data Factory
+4. Storage Accounts (Data Lake)
+5. App Registrations (AAD)
+
+---
+
+### **Step 3: Delete the Resource Group**
+Deleting the Resource Group removes all nested resources in one step.
+
+**Steps:**
+
+1. Go to **Resource Groups**.
+2. Select your project’s RG (e.g., `Tokyo-Olympic`).
+3. Click **Delete** and confirm.
+
+**Summary**: Delete your resources if you’re done with the project to prevent post-trial charges. Always verify in **Cost Analysis** afterward. 🚀
